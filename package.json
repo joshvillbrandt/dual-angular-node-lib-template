@@ -1,0 +1,27 @@
+{
+  "name": "NodeTemplate",
+  "version": "0.1.0",
+  "description": "An example Node project..",
+  "main": "src/NodeLibrary.js",
+  "scripts": {
+    "test": "mocha -w --reporter spec",
+    "testonce": "mocha --reporter spec",
+    "start": "node src/script.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joshvillbrandt/NodeTemplate.git"
+  },
+  "author": "Josh Villbrandt",
+  "license": "Apache v2",
+  "bugs": {
+    "url": "https://github.com/joshvillbrandt/NodeTemplate/issues"
+  },
+  "homepage": "https://github.com/joshvillbrandt/NodeTemplate",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "chai": "^1.9.1",
+    "mocha": "^1.20.1"
+  }
+}
