@@ -1,8 +1,8 @@
 {
-  "name": "NodeTemplate",
+  "name": "dual-angular-node-lib-template",
   "version": "0.1.0",
-  "description": "An example Node project..",
-  "main": "src/NodeLibrary.js",
+  "description": "A template library that can used directly with both Node and Angular.",
+  "main": "src/Library.js",
   "scripts": {
     "test": "mocha -w --reporter spec",
     "testonce": "mocha --reporter spec",
@@ -10,17 +10,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/joshvillbrandt/NodeTemplate.git"
+    "url": "https://github.com/joshvillbrandt/dual-angular-node-lib-template.git"
   },
   "author": "Josh Villbrandt",
   "license": "Apache v2",
   "bugs": {
-    "url": "https://github.com/joshvillbrandt/NodeTemplate/issues"
+    "url": "https://github.com/joshvillbrandt/dual-angular-node-lib-template/issues"
   },
-  "homepage": "https://github.com/joshvillbrandt/NodeTemplate",
+  "homepage": "https://github.com/joshvillbrandt/dual-angular-node-lib-template",
   "dependencies": {
+    "lodash": "^2.4.1"
   },
   "devDependencies": {
+    "angular": "^1.2.23",
     "chai": "^1.9.1",
     "mocha": "^1.20.1"
   }

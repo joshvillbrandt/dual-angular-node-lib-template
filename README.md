@@ -1,6 +1,6 @@
-# NodeTemplate
+# dual-angular-node-lib-template
 
-An example Node project.
+A template library that can used directly with both Node and Angular.
 
 ## Setup
 
@@ -8,29 +8,37 @@ You must have Git, Node, and NPM already installed to use this project. Get the 
 
 ```bash
 git clone https://github.com/joshvillbrandt/NodeTemplate.git
-cd NodeTemplate/
+cd dual-angular-node-lib-template/
 npm install
 ```
 
 ## Usage
 
-The install step above installs the necessary dependencies. You can now start the program from the repository directory:
+This package provides the library `Library` which is available in Node scripts (via require) and in Angular scripts (via Angular's dependency injector.)
 
-```bash
-npm start
+To use with Node, first add the library repo to your `package.json`'s dependencies list. Next, `npm install` your package. Then you can access the library in a Node script like this:
+
+```javascript
+var lib = require('Library');
+
+lib.doThing();
+```
+
+To use with Angular, first add the library repo to your `bower.json`'s dependencies list. Next, `bower install` your package and include `src/Library.js` in your html page. Then you can access the library in an Angular script like this:
+
+```javascript
+var app = angular.module('app', ['Library']);
+
+app.controller('MyCtrl', ['Library',
+  function (lib) {
+    lib.doThing();
+  }
+]);
 ```
 
 ## API
 
-This package also provides the library `NodeLibrary`. The script uses this internally, but you can also use the library directly from a JavaScript project like this:
-
-```python
-var lib = require('NodeLibrary');
-
-lib.doThing()
-```
-
-The `NodeLibrary` library provides these functions:
+The `Library` library provides these functions:
 
 * `lib.doThing()` - does a thing
 
@@ -46,6 +54,6 @@ npm test
 
 This project uses [semantic versioning](http://semver.org/).
 
-### v0.1.0 - 2014/09/09
+### v0.1.0 - 2014/10/02
 
-* Initial release of the Node template
+* Initial release of the template

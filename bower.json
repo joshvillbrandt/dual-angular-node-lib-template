@@ -1,0 +1,22 @@
+{
+  "name": "dual-angular-node-lib-template",
+  "version": "0.1.0",
+  "authors": [
+    "Josh Villbrandt <josh@javconcepts.com>"
+  ],
+  "description": "A template library that can used directly with both Node and Angular.",
+  "main": [
+    "src/Library.js"
+  ],
+  "ignore": [
+    "**/.*"
+  ],
+  "dependencies": {
+    "angular": "^1.2.23",
+    "lodash": "^2.4.1"
+  },
+  "overrides": {},
+  "license": "Apache v2",
+  "homepage": "https://github.com/joshvillbrandt/dual-angular-node-lib-template",
+  "private": true
+}

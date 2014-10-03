@@ -1,3 +1,3 @@
-var lib = require('../src/NodeLibrary.js');
+var lib = require('../src/Library.js');
 
 console.log(lib.doThing());
