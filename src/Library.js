@@ -1,4 +1,4 @@
-(function(module, window, undefined) {
+(function(module, undefined) {
 'use strict';
 
 var factory = function(_) {
